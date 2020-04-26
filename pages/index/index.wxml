@@ -1,0 +1,28 @@
+<!-- 搜索 -->
+<view class="seek">
+  <input placeholder="搜索"></input>
+</view>
+<!-- 轮播图 -->
+<swiper class="slideshow" indicator-dots="true" autoplay="true" interval="3000" >
+  <swiper-item wx:for="{{swiper_list}}" wx:key="*this">
+    <image src="{{item.image_src}}"></image>
+  </swiper-item>
+</swiper>
+<!-- 图标引导 -->
+<view class="guide">
+  <block wx:for="{{catItems}}" wx:key="*this">
+    <image src="{{item.image_src}}"></image>
+  </block>
+</view>
+<!-- 时尚服装 -->
+<view id="clothing">
+  <view class="headline">时尚服装</view>
+  <view class="clothing-img">
+    <block wx:for="{{floorData[0].product_list}}"  wx:key="*this">
+      <image class="imgs" src="{{item.image_src}}"></image>
+    </block>
+  </view>
+</view>
+
+
+

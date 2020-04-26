@@ -1,0 +1,96 @@
+@import "icon/iconfont.wxss";
+page{
+    background:#F9FAF9;
+}
+.user {
+    width:100%;
+    height:400rpx;
+    background: #fff;
+    position: relative;
+    button {
+        top:20%;
+        height:80rpx;
+        color:#E7433F;
+        border:1px solid #E7433F;
+        background:#fff;
+    }
+    #backimg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        filter:blur(10px);
+    }
+    #user-img {
+        width:170rpx;
+        height:170rpx;
+        top:10%;
+        left: 50%;
+        transform:translateX(-50%);
+        
+        border-radius: 1000rpx;
+        position: absolute;
+    }
+    text {
+        top:55%;
+        left: 50%;
+        transform:translateX(-50%);
+        color: #fff;
+        position: absolute;
+    }
+}
+.trade {
+    width:100%;
+    height:150rpx;
+    display: flex;
+    justify-content:space-around;
+    background: #fff;
+    margin:10rpx 0;
+    .trade-item{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        .iconfont{
+            font-size:45rpx;
+            text-align: center;
+        }
+        
+        .text {
+            font-size: 30rpx;
+        }
+    }
+}
+
+.system {
+    width:100%;
+    height:500rpx;
+    background: #fff;
+    
+    .system-item {
+        height:100rpx;
+        border-bottom: 1px solid #CACACA;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 0 20rpx;
+      .left {
+          width:200rpx;
+        display: flex;
+        justify-content:space-around;
+        
+        .iconfont {
+            font-size: 45rpx;
+            
+        }
+  
+        text {
+            font-size: 30rpx;
+        }
+      }
+  
+      .right {
+        text {
+  
+        }
+      }
+    }
+  }
